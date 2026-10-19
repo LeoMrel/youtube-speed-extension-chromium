@@ -1,0 +1,6 @@
+{
+  "extName": { "message": "YouTube Speed Slider" },
+  "extDescription": { "message": "Playback speed for YouTube (toolbar popup and an on-page control with a configurable shortcut) plus SponsorBlock: marks and skips sponsors. Up to x16." },
+  "actionTitle": { "message": "YouTube speed" },
+  "commandToggle": { "message": "Show or hide the speed control (bottom center)" }
+}

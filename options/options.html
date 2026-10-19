@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="opt.title">YouTube Speed Slider: options</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main>
+    <div class="topbar">
+      <h1 data-i18n="opt.speeds">Speeds</h1>
+      <button type="button" id="langToggle" class="ghost lang" data-i18n-attr="aria-label:lang.switch;title:lang.switch">🌐 …</button>
+    </div>
+    <p class="lead" data-i18n="opt.speedsHelp"></p>
+
+    <input type="text" id="speedsInput" spellcheck="false" autocomplete="off" placeholder="0.5, 1, 1.5, 2, 3" data-i18n-attr="aria-label:opt.speedsAria">
+
+    <div class="row">
+      <button type="button" id="save" data-i18n="save"></button>
+      <button type="button" id="defaults" class="ghost" data-i18n="restore"></button>
+    </div>
+    <p id="msg" class="msg" role="status"></p>
+
+    <label class="check">
+      <input type="checkbox" id="remember">
+      <span data-i18n="remember"></span>
+    </label>
+
+    <h2>SponsorBlock</h2>
+    <p class="lead" data-i18n-rich="opt.sbLead"></p>
+
+    <label class="check">
+      <input type="checkbox" id="sbEnabled">
+      <span data-i18n="opt.sbEnabled"></span>
+    </label>
+    <label class="check">
+      <input type="checkbox" id="sbNotice">
+      <span data-i18n="opt.sbNotice"></span>
+    </label>
+
+    <table class="sb-table">
+      <thead>
+        <tr><th data-i18n="opt.thCategory"></th><th data-i18n="opt.thAction"></th><th data-i18n="opt.thColor"></th></tr>
+      </thead>
+      <tbody id="sbRows"></tbody>
+    </table>
+    <div class="row">
+      <button type="button" id="sbResetColors" class="ghost" data-i18n="opt.resetColors"></button>
+    </div>
+
+    <p class="note" data-i18n-rich="opt.privacy"></p>
+    <p class="note">
+      Uses SponsorBlock data licensed under
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>
+      from <a href="https://sponsor.ajay.app/" target="_blank" rel="noopener">https://sponsor.ajay.app/</a>.
+      <span data-i18n="opt.disclaimer"></span>
+    </p>
+
+    <h2 data-i18n="opt.shortcutTitle"></h2>
+    <p class="lead" data-i18n-rich="opt.shortcutLead"></p>
+
+    <div class="row">
+      <output id="shortcutCurrent" class="shortcut-current">…</output>
+      <button type="button" id="shortcutChange" data-i18n="opt.change"></button>
+    </div>
+    <div class="row">
+      <button type="button" id="shortcutClear" class="ghost" data-i18n="opt.clear"></button>
+      <button type="button" id="shortcutReset" class="ghost" data-i18n="opt.reset"></button>
+    </div>
+    <p id="shortcutMsg" class="msg" role="status"></p>
+
+    <p class="note" id="shortcutRules"></p>
+  </main>
+  <script src="../shared.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

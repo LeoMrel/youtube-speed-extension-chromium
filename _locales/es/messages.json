@@ -1,0 +1,6 @@
+{
+  "extName": { "message": "YouTube Speed Slider" },
+  "extDescription": { "message": "Velocidad de reproducción para YouTube (popup en la barra y control inferior con atajo configurable) y SponsorBlock: marca y salta patrocinios. Hasta x16." },
+  "actionTitle": { "message": "Velocidad de YouTube" },
+  "commandToggle": { "message": "Mostrar u ocultar el control de velocidad (abajo, en el centro)" }
+}
